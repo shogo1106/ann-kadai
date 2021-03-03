@@ -111,7 +111,7 @@ flex
 .flex_3column_l .box_menu_main dt span::after{
    content:'';
    display: block;
-   background-image: url(./img/07.png);
+   background-image: url(https://github.com/shogo1106/ann-kadai/blob/main/img/07.png?raw=true);
    background-repeat: no-repeat;
    background-position: center;
    height: 7px;
@@ -387,7 +387,7 @@ block_photo
 ------------------------------------*/
 
 .news{
-    background: url(/img/29.jpg);
+    background: url(https://github.com/shogo1106/ann-kadai/blob/main/img/29.jpg?raw=true);
     background-position: center right;
     background-repeat: no-repeat;
     height: 639px;
