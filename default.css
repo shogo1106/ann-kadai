@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/*===================================
+  ヘッダー
+===================================*/
+.gnav_top{
+    justify-content: flex-end;
+    margin: 7px 0 20px 0;
+}
+.gnav_top li{
+    font-size: 0.8rem;
+}
+.gnav_top li:nth-child(2){
+    margin-left: 35px;
+}
+.gnav_submenu{
+    font-weight: bold;
+    font-size: 1.13rem;
+}
+.gnav_submenu li{
+    margin-left: 38px;
+}
+.icon_btn{
+    margin-left: 35px;
+}
+.icon_btn .mail_icon{
+    background: #FFE500;
+    padding: 13px;
+    font-size: 1rem;
+    border-radius: 999px;
+}
+.mobile_icon{
+    margin-left: 25px;
+}
+.mobile_icon i{
+    font-size: 2.5rem;
+}
+.mobile_number{
+    font-size: 1.3rem;
+    margin-left: 9px;
+}
+.gnav_submenu li:nth-child(1){
+ margin-left: 0; 
+}
+header{
+    width: 1160px;
+    margin: 0 auto;
+}
+.header_inner{
+    margin: 15px 0;
+}
+
+/*------------------------------------
+フッター
+------------------------------------*/
+
+@media print, screen and (min-width: 992px){
+.footer_inner {
+        width: 960px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+.footer_phone_flex i{
+        font-size: 2.5rem;
+    }
+
+.footer_nav {
+    display: flex;
+    padding: 50px 0;
+}
+
+.footer_nav > ul:nth-child(1) {
+    margin-right: 100px;
+}
+
+.footer_nav > ul > li > a {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+.footer_nav > ul > li > a::before {
+    content: '';
+    left: 4px;
+    box-sizing: border-box;
+    width: 4px;
+    height: 4px;
+    top: 27%;
+    border: 6px solid transparent;
+    border-left: 9px solid #FFE500;
+    position: absolute;
+}
+
+.footer_nav a:hover {
+    text-decoration: underline;
+}
+
+.footer_mail_icon{
+    background: #FFE500;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 999px;
+    margin-left: 20px;
+    color: #000;
+}
+
+.footer_logo img{
+    width: auto;
+}
+
+.footer_info{
+    margin-top: 65px;
+}
+
+.footer_address{
+    margin: 30px 0 15px;
+    font-size: 0.9rem;
+}
+
+.footer_copyright {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    background: #0E0E0E;
+  }
+  
+  .footer_copyright a {
+    color: #fff !important;
+  }
+
+}
+
+

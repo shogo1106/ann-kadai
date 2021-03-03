@@ -1,0 +1,575 @@
+@charset "UTF-8";
+
+/*------------------------------------
+ttl
+------------------------------------*/
+.ttl_main {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 0.2em;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.ttl_main::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 1px;
+    bottom: 125px;
+    height: 70px;
+    margin: auto;
+    background-color: #000;
+}
+
+.ttl_main::after{
+    content: 'symptom';
+    position: absolute;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 65px;
+    font-size: 1.1rem;
+    letter-spacing: 0;
+}
+
+/*------------------------------------
+flex
+------------------------------------*/
+.flex_3column_l, .flex_3column, .flex_3column_m, .flex_4column{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.flex_3column_l > .flex_item{
+    width: 280px;
+}
+
+.flex_3column_m > .flex_item{
+    width: 271px;
+}
+
+@media screen and (max-width: 991px) {
+    .flex_3column_l > .flex_item{
+        width: 100%;
+    }
+    
+    .flex_3column_m > .flex_item{
+        width: 100%;
+    }
+}
+
+
+/*------------------------------------
+ファーストビュー
+------------------------------------*/
+.fv_lead{
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.75;
+}
+
+
+/*------------------------------------
+健康診断
+------------------------------------*/
+
+.flex_3column_l .box_menu_main dt{
+    text-align: center;
+    font-weight: bold;
+}
+
+.flex_3column_l .box_menu_main dd{
+    font-size: 1.1rem;
+}
+
+.flex_3column_l .box_menu_main dt p{
+    margin-top: 10px;
+    font-size: 1.6rem;
+}
+
+.flex_3column_l .box_menu_img img{
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.flex_3column_l .box_menu_img p{
+    overflow: hidden;
+}
+
+.box_menu:hover .box_menu_img img{
+    transform: scale(1.1, 1.1);
+}
+
+.flex_3column_l .box_menu_main dt span::after{
+   content:'';
+   display: block;
+   background-image: url(./img/07.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 7px;
+   margin: 7px 0 15px 0;
+}
+
+@media screen and (max-width: 991px) {
+    .box_menu_main{
+        display: flex;
+        align-items: center;
+    }
+}
+
+/*------------------------------------
+コンセプト
+------------------------------------*/
+.concept{
+    position: relative;
+}
+
+.concept .concept_img{
+ text-align: right;
+}
+
+.concept_ttl{
+    font-weight: bold;
+    font-size: 1.66rem;
+    margin-bottom: 50px;
+}
+
+.concept .concept_img img{
+    width:auto;
+}
+
+.concept_main{
+    position: absolute;
+    top: 40px;
+    width: 575px;
+}
+
+.concept_txt{
+    width: 525px;
+}
+
+.concept_txt p:first-child{
+    font-size: 1.16rem;
+    margin-bottom: 18px;
+    letter-spacing: .15em;
+}
+
+.concept_txt p:last-child{
+     text-align: right;
+}
+
+.concept_txt p:last-child img{
+    width: auto;
+}
+
+.concept_btn{
+    text-align: right;
+    margin-top: 110px;
+}
+
+.concept_btn img{
+    width: auto;
+}
+
+/*------------------------------------
+symptom
+------------------------------------*/
+
+.symptom{
+    margin-top: -145px;
+}
+
+.symptom_bg_img{
+    top: 120px;
+    position: relative;
+
+}
+
+.symptom_menu_img{
+    position: relative;
+    z-index: 0;
+}
+
+.symptom_menu_img img{
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.symptom_menu:hover .symptom_menu_img img{
+    transform: scale(1.1, 1.1);
+}
+
+.symptom_menu_img > span{
+    display: block;
+    overflow: hidden;
+}
+
+.symptom_menu_img::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #fff;
+    z-index: -1;
+}
+
+.symptom_bg_img img{
+    width: auto;
+}
+
+.symptom_bg_color{
+    background: #eee;
+    width: 100%;
+    height: 621px;
+    margin-top: 29px;
+}
+
+.flex_3column > .flex_item{
+    width: 280px;
+}
+
+.symptom_menu_main dt{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 36px 0 10px 0;
+}
+
+.symptom_menu_main dd span{
+    display: block;
+    line-height: 1.75;
+}
+
+.symptom_menu_main dd .txt01{
+   margin-left: 11px;
+}
+
+.symptom_menu_main dd{
+    margin-left: 18px;
+    font-size: 0.86rem;
+}
+
+.symptom_menu_main dd p{
+    margin: 10px 0 5px 0;
+}
+
+.symptom_menu_main dd span::before{
+    content: '●';
+    font-size: 0.7rem;
+    padding-right: 15px;
+    position: relative;
+    top: -2px;
+    color: #FFE500;
+}
+
+.symptom .flex_3column{
+    margin-top: -520px;
+}
+
+/*------------------------------------
+subject
+------------------------------------*/
+.subject{
+    padding-top: 20px;
+}
+
+.subject .ttl_main::after{
+    content: 'subject of medical treatment';
+}
+
+.flex_3column_m{
+    margin-top: 80px;
+}
+
+.flex_3column_m .subject_img{
+    width: 224px;
+}
+
+.flex_3column_m > .flex_item:nth-child(n+4){
+    margin-top: 50px;
+}
+
+.flex_3column_m .flex_item p{
+    width: 224px;
+    text-align: center;
+    font-size: 0.89rem;
+    margin-top: 5px;
+}
+
+/*------------------------------------
+block_photo
+------------------------------------*/
+.block_photo{
+    position: relative;
+    margin-left: auto;
+    max-width: 1540px;
+}
+
+.block_photo p{
+    position: absolute;
+    top: 39%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+/*------------------------------------
+セミナー情報
+------------------------------------*/
+.event_ttl {
+    text-align: center;
+}
+
+.event_ttl img{
+    width: auto;
+}
+
+.flex_4column{
+    margin-top: 40px;
+}
+
+.flex_item_event_img{
+    position: relative;
+    height: 281px;
+    width: 170px;
+}
+
+.flex_item_event_img img{
+    position: absolute;
+    bottom: 0;
+}
+
+.event_main dt{
+    width: 200px;
+    margin-left: auto;
+}
+
+.event_main dd{
+    width: 215px;
+}
+
+.event_main dd:hover{
+    text-decoration: underline;
+}
+
+.event_main dd small{
+    opacity: .7;
+}
+
+.event_main dd p{
+    font-weight: bold;
+}
+
+.event_btn{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.event_btn img{
+    width: auto;
+}
+
+/*------------------------------------
+新着情報
+------------------------------------*/
+
+.news{
+    background: url(/img/29.jpg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    height: 639px;
+    padding: 145px 0;
+    background-size: cover;
+}
+
+
+.news_main{
+    width: 86%;
+}
+
+.news_main h2{
+    position: relative;
+    border-bottom: 4px solid #333;
+    padding: 0 0 5px 5px;
+    font-size: 1.8rem;
+}
+.news_main h2::after{
+    content: "WHAT'S NEW";
+    font-size: .7rem;
+    position: absolute;
+    bottom: 15px;
+    left: 160px;
+    letter-spacing: -0.02em;
+}
+
+.news_main dt{
+    margin: 0 0 35px;
+}
+
+.news_main a{
+    display: block;
+}
+
+.news_main dd{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted #ddd;
+    width:94%;
+    margin: 15px 0 0;
+    padding: 0 0 15px;
+}
+
+.news_main dd span{
+    opacity: .7;
+}
+
+.news_main dd p{
+    width: 500px;
+    margin-right: 215px;
+}
+
+.news_btn{
+    text-align: right;
+    margin: 40px 25px 0 0;
+}
+
+.news_btn img{
+    width: auto;
+}
+
+/*------------------------------------
+ブログ
+------------------------------------*/
+
+.flex_2column{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*------------------------------------
+アクセス
+------------------------------------*/
+.access{
+    background: #F6F6F6;
+    padding: 50px 0 70px 0;
+}
+
+.access_sect{
+    margin-top: 120px;
+}
+
+.access_txt{
+    border-bottom: 3px dotted #bbb;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.3rem;
+}
+
+.access_txt span{
+    font-size: 1.5rem;
+}
+
+.access_table{
+    width: 540px;
+    margin-top: 40px;
+}
+
+.access_wrap{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.access_table tr:not(.access_table_head) th,
+.access_table tr td:not(:last-of-type) {
+padding: 18px 0 18px;
+}
+
+.access_table_head th {
+padding: 18px 0 18px;
+font-size: 120%;
+background-color: #EEEDD9;
+font-weight: bold;
+}
+
+
+@media all and (-ms-high-contrast:none) {
+.access_table tr:not(.access_table_head) th,
+.access_table tr td:not(:last-of-type),
+.access_table_head th {
+padding: 13px 0 8px;
+}
+}
+
+.access_table tr th:first-of-type {
+width: 28%;
+font-size: 90%;
+}
+.access_table tr:first-of-type th:last-of-type {
+width: 10%;
+letter-spacing: 0;
+}
+.icon_line::before {
+content: "";
+display: block;
+width: 10px;
+height: 2px;
+margin: 0 auto;
+background-color: #FFE500;
+transform: translateY(-6px);
+margin-right: 40px;
+}
+.icon_circle::before {
+content: "";
+display: block;
+width: 14px;
+height: 14px;
+margin: 0 auto;
+background-color: #FFE500;
+border-radius: 7px;
+margin-right: 40px;
+}
+
+.access_iframe iframe{
+    width: 550px;
+    height: 400px;
+}
+
+.access_iframe{
+    border: 5px solid #fff;
+}
+
+.access_table_body, .access_table_body02{
+    background: #fff;
+}
+
+.access_table_body > th{
+    padding-left: 15px !important;
+}
+
+.access_table_body02 > th{
+    padding-left: 10px !important;
+}
+
+.access_table_head th:first-child{
+    padding-left: 20px;
+}
+
+.table_bottom_txt{
+    text-align: right;
+    margin-top: 20px;
+}
+

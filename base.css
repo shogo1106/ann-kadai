@@ -1,0 +1,502 @@
+@charset "UTF-8";
+/*===================================
+  
+  マスターCSS（PC） ※編集不可※
+  共通部分のcss
+
+===================================*/
+/* フォントサイズ
+------------------------------------------------------------------------------------*/
+@media screen and (min-width: 200px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 72.5%;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 82.5%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 62.5%;
+    width: 100%;
+  }
+}
+
+/* 初期化
+------------------------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP","メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  color: #333333;
+  background: #FFF;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, th, td {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+img {
+  vertical-align: top;
+  -webkit-backface-visibility: hidden;
+}
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+em, i {
+  font-style: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+hr {
+  display: none;
+}
+
+abbr, acronym {
+  border: 0;
+}
+
+iframe {
+  width: 100%;
+}
+
+/*==========================================================================
+# reset - ブラウザの差異や不要なスタイルを無くすためのスタイル
+========================================================================== */
+* ,
+*:before,
+*:after{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  html, body, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td, small, button, time, figure {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+  }
+  
+  html {
+    line-height: 1;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: 'Noto Sans', sans-serif , Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans", Meiryo,
+    sans-serif;
+    line-height: 1.5;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  li, dd {
+    list-style-type: none;
+  }
+  
+  header, footer, nav, section, article, aside, figure, figcaption {
+    display: block;
+  }
+  
+  img {
+    border: none;
+    vertical-align: bottom;
+    width: 100%;
+  }
+  
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .btn{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+  }
+
+/*------------------------------------
+初期化（SP）
+------------------------------------*/
+@media screen and (max-width: 991px) {
+  html, body, div, span, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  abbr, address, cite, code,
+  del, dfn, em, ins, kbd, q, samp,
+  small, strong, sub, sup, var,
+  b, i,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 1rem;
+  }
+  body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -webkit-text-size-adjust: none;
+    position: relative;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+  }
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  nav ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background: transparent;
+    color: #333;
+  }
+  /* change colours to suit your needs */
+  ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+  }
+  /* change colours to suit your needs */
+  mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+  }
+  del {
+    text-decoration: line-through;
+  }
+  abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  /* change border colour to suit your needs */
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  input, select {
+    vertical-align: middle;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+    border: none;
+  }
+  ul, ol {
+    list-style: none;
+  }
+  em, i {
+    font-style: normal;
+  }
+}
+
+/*------------------------------------
+コンテンツ幅
+------------------------------------*/
+  @media screen and (min-width: 992px) {
+    .flex{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .inner_l{
+      width: 1150px;
+      margin: 0 auto;
+    }
+    .inner {
+      width: 1080px;
+      margin: 0 auto;
+    }
+    
+    .inner_s {
+      width: 1024px;
+      margin: 0 auto;
+    }
+    
+    .inner_ss {
+        width: 960px;
+        margin: 0 auto;
+      }
+    .sect{
+      margin-top: 80px;
+    }
+  }
+/* SP */
+@media screen and (max-width: 991px) {
+  .inner, .inner_s, .inner_ss {
+    width: 100%;
+    padding: 0 6%;
+  }
+
+}
+
+/*------------------------------------
+clearfix 
+------------------------------------*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clearfix {
+  display: block;
+}
+
+/* End IE-mac */
+.clear {
+  clear: both;
+}
+
+/*------------------------------------
+リンク 
+------------------------------------*/
+a {
+  color: #333333;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #333333;
+}
+
+area {
+  outline: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 992px) {
+  /* ホバーアクション */
+  .hover {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .hover:hover {
+    opacity: 0.6 !important;
+  }
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
+
+/*------------------------------------
+テキスト
+------------------------------------*/
+.txt_bold {
+  font-weight: bold;
+}
+
+.txt_co_orange {
+  color: #FF7F00;
+}
+
+/*------------------------------------
+ボタン
+------------------------------------*/
+.btn_cmn {
+  position: relative;
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  max-width: 240px;
+  width: 100%;
+  margin: 35px auto 0;
+  padding: 10px 15px;
+  text-decoration: none;
+  background: #01BFF2;
+  border: 2px solid #01BFF2;
+  cursor: pointer;
+  z-index: 3;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.btn_cmn::before {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 20px;
+}
+
+.btn_cmn:hover {
+  background: #fff;
+  color: #01BFF2;
+}
+
+.btn_cmn:hover::before {
+  border-color: #01BFF2;
+}
+
+@media screen and (max-width: 991px) {
+  .btn_cmn {
+    width: 75%;
+    max-width: 250px;
+    font-size: 1.4rem;
+  }
+}
+
+/*------------------------------------
+スマホ　非表示
+------------------------------------*/
+@media screen and (min-width: 992px) {
+  .disp_sp {
+    display: none !important;
+  }
+}
+
+/*------------------------------------
+PC　非表示
+------------------------------------*/
+@media screen and (max-width: 991px) {
+  .disp_pc {
+    display: none !important;
+  }
+}
+
+/*------------------------------------
+margin
+------------------------------------*/
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
